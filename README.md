@@ -1,39 +1,43 @@
-# 🛍️ Mall Customer Segmentation using K-Means Clustering
+# 🛍️ Segmentation des clients d'un centre commercial avec K-Means
 
-## 📌 Project Overview
+## 📌 Présentation du projet
 
-This project applies the K-Means clustering algorithm to segment mall customers based on their annual income and spending score. The objective is to identify customer groups that can help businesses improve their marketing strategies and better understand customer behavior.
+Ce projet applique l'algorithme de **K-Means Clustering** afin de segmenter les clients d'un centre commercial en fonction de leur **revenu annuel** et de leur **score de dépenses**.
 
----
-
-## 🎯 Objectives
-
-- Explore the dataset
-- Clean and preprocess the data
-- Encode categorical features
-- Analyze feature correlations
-- Detect outliers
-- Apply StandardScaler
-- Determine the optimal number of clusters using the Elbow Method
-- Train the K-Means clustering model
-- Visualize customer segments
+L'objectif est d'identifier différents profils de clients pour aider les entreprises à mieux comprendre le comportement des consommateurs et à optimiser leurs stratégies marketing.
 
 ---
 
-## 📊 Dataset Information
+## 🎯 Objectifs
 
-- Dataset: Mall Customer Segmentation Dataset
-- Number of samples: 200
-- Number of features: 4
-- Features:
-  - Gender
-  - Age
-  - Annual Income (k$)
-  - Spending Score (1-100)
+- Explorer le jeu de données.
+- Nettoyer et prétraiter les données.
+- Encoder les variables catégorielles.
+- Analyser les corrélations entre les variables.
+- Détecter les valeurs aberrantes.
+- Normaliser les données avec **StandardScaler**.
+- Déterminer le nombre optimal de clusters grâce à la méthode du coude (Elbow Method).
+- Entraîner le modèle **K-Means**.
+- Visualiser les différents segments de clients.
 
 ---
 
-## 🛠 Technologies Used
+## 📊 Informations sur le jeu de données
+
+**Nom :** Mall Customer Segmentation Dataset
+
+- Nombre d'observations : **200**
+- Nombre de variables : **4**
+  
+- Variables
+- Sexe (Gender)
+- Âge
+- Revenu annuel (k$)
+- Score de dépenses (1–100)
+
+---
+
+## 🛠 Technologies et bibliothèques utilisées
 
 - Python
 - Pandas
@@ -43,54 +47,55 @@ This project applies the K-Means clustering algorithm to segment mall customers 
 
 ---
 
-## 🤖 Machine Learning Workflow
+## 🤖 Processus de Machine Learning
 
-1. Data Loading
-2. Data Exploration
-3. Missing Value Check
-4. Duplicate Check
-5. Remove Customer ID
-6. Encode Gender
-7. Correlation Matrix
-8. Boxplot Visualization
-9. Feature Scaling using StandardScaler
-10. Elbow Method
-11. K-Means Clustering
-12. Cluster Prediction
-13. Customer Segmentation Visualization
-
----
-
-## 📈 Model Performance
-
-- Optimal Number of Clusters (K): **5**
-- Clustering Algorithm: **K-Means**
+1. Chargement du jeu de données
+2. Analyse exploratoire des données (EDA)
+3. Vérification des valeurs manquantes
+4. Vérification des doublons
+5. Suppression de l'identifiant du client (Customer ID)
+6. Encodage de la variable **Gender**
+7. Analyse des corrélations
+8. Détection des valeurs aberrantes (Boxplot)
+9. Normalisation des données avec **StandardScaler**
+10. Détermination du nombre optimal de clusters (Elbow Method)
+11. Entraînement du modèle **K-Means**
+12. Prédiction des clusters
+13. Visualisation des segments de clients
 
 ---
 
-## 📉 Visualizations
+## 📈 Résultats
 
-### Correlation Matrix
+- Nombre optimal de clusters : **5**
+- Algorithme utilisé : **K-Means Clustering**
+
+---
+
+## 📉Visualisations
+
+### Matrice de corrélation
 <img width="752" height="702" alt="image" src="https://github.com/user-attachments/assets/125a107d-7a63-4bd3-b469-348aa0c6233c" />
 
-### Boxplot
+### Détection des valeurs aberrantes (Boxplot)
 <img width="989" height="590" alt="image" src="https://github.com/user-attachments/assets/609763cb-c764-434c-83d8-d4a0f0c53fc3" />
 
-### Elbow Method
+### Méthode du coude (Elbow Method)
+
 <img width="695" height="470" alt="image" src="https://github.com/user-attachments/assets/416f674b-b601-4338-aaa0-436ab1633dec" />
 
-### Customer Segmentation
+### Segmentation des clients
 <img width="695" height="547" alt="image" src="https://github.com/user-attachments/assets/c5d85e24-5073-41fa-8885-0fc029efeb67" />
 
-### Cluster Centers
+### Centres des clusters
 
 <img width="695" height="547" alt="image" src="https://github.com/user-attachments/assets/940d4d7d-c706-44e2-a981-70e4ddcfa88c" />
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure du projet
 
-```
+```text
 Mall-Customer-Segmentation-KMeans/
 │
 ├── mall_customer_segmentation_kmeans.ipynb
@@ -107,12 +112,12 @@ Mall-Customer-Segmentation-KMeans/
 
 ---
 
-## 🚀 Future Improvements
+## 🚀Améliorations futures
 
-- Compare K-Means with Hierarchical Clustering
-- Apply PCA for cluster visualization
-- Test different numbers of clusters
-- Build an interactive dashboard
+- Comparer les résultats avec le clustering hiérarchique.
+- Appliquer la réduction de dimension (**PCA**) pour améliorer la visualisation.
+- Tester différents nombres de clusters.
+- Développer un tableau de bord interactif pour explorer les segments de clients.
 
 ---
 
